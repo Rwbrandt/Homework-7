@@ -4,21 +4,23 @@
 
 ## Time-Series Analysis
 
-### Procedural Summary
+### *Procedural Summary*
 
-Creating the time series analysis for the Yen presented a few challenges.  To start, the original database for ARMA models was removed from Jupyter in favor a code that better fit the overall schema.  Adjusting where the ARMA model came from created a secondary issue of running forecasts for future Yen settle prices.  The main difference between those two source codes presented itself in the form of two different dataframes that required different pull requests to create the forecasts.
+Creating the time series analysis for the Yen presented a few challenges.  To start, the original ARMA model was deprecated in favor of ARIMA models that required a (2, 0, 2) code to better fit the overall schema.  Adjusting where the ARMA model came from created a secondary issue of running forecasts for future Yen settle prices.  The main difference between those two source codes presented itself in the form of two different dataframes that required different pull requests to create the forecasts.
 
-### Evaluation
-#### Purchase Potential?
-
-#### Risk?
+### *Evaluation*
+#### Purchase and Risk Potential?
+Reviewing the analysis performed on Yen prices, I would not feel comfortable putting money into that market at present.  Yen is a volatile currency and is fairly unpredictable, therefore bringing a large amount of risk when dealing with international businesses.
 
 #### Model Confidence?
+
+Based on these models, I would not feel incredibly confident about relying on them for trading purposes.  The main reason being the current dataset being used only goes up to late 2019 settle prices.  If I was to update the models using current data, then training the model for account for current environmental factors that could not be predicted, I would feel much more confident in this model's ability for prediction.
+
 ------
 
 ## Linear Regression Analysis
 
-### Procedural Summary
+### *Procedural Summary*
 
 Pulling in the data of Yen changes and settle prices for the past 30 years allows for a more acurate prediction of future prices.  
 
@@ -28,7 +30,7 @@ At this point it is important to split the data up into the testing and training
 
 Fitting the training and testing data to a simple regression model, predictions are able to be made about the potential future of the Yen
 
-### Sample Performance Evaluation
+### *Sample Performance Evaluation*
 
 The analysis performed above allows for accuracy tests to be run on both the training and testing data to determine the legitimacy of these models.  
 
