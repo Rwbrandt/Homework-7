@@ -6,6 +6,8 @@
 
 ### Procedural Summary
 
+Creating the time series analysis for the Yen presented a few challenges.  To start, the original database for ARMA models was removed from Jupyter in favor a code that better fit the overall schema.  Adjusting where the ARMA model came from created a secondary issue of running forecasts for future Yen settle prices.  The main difference between those two source codes presented itself in the form of two different dataframes that required different pull requests to create the forecasts.
+
 ### Evaluation
 #### Purchase Potential?
 
